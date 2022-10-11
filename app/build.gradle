@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.paymentcontrollerdemo'
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.example.paymentcontrollerdemo"
         minSdk 23
-        targetSdk 31
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -52,7 +52,11 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+
+    // Terra Core
     implementation "vn.teko.terra:terra-core-android:1.0.2"
+    // Terra Payment
     implementation "vn.teko.android.payment:payment-ui:3.1.0"
+    // Terra Observer
     implementation "vn.teko.android.payment.controller:terra-payment-controller-observer:0.0.1-alpha.1"
 }
